@@ -12,9 +12,26 @@ let division =  110 / 11
 let remainder =  110 % 10
 let exponent =  2 ** 2
 
+
+
+// Increment and decrement---->
+
+let myVar = 10
+myVar++
+
+let credits = 56
+credits--
+
+console.log(myVar);
+console.log(credits);
+
+
+
+// comparision operation----->
+
 let num1 = 3
 let num2 = 3
 let num3 = 6
 
-console.log(num1 == num2);
+console.log(num1 == num2); 
 console.log(num1 != num3);
