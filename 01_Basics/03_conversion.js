@@ -43,3 +43,8 @@ let str = 33
 let stringNumber = String(str)
 console.log(stringNumber)
 console.log(typeof stringNumber)
+
+
+
+
+
