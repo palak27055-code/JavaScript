@@ -42,12 +42,15 @@ let heroes = ["Ironman", "Spiderman", "Thor", "Hulk", true, 34, null];
 // console.log(heroes[0]);
 
 
+// Boolean --->(primitive)
 
 
 let isValue = true;
 console.log((isValue) + 2);
 console.log((isValue));
 console.log(Number(isValue));
+console.log(Number(null));
+console.log(Number(undefined));
 
 
 
@@ -55,5 +58,6 @@ console.log(Number(isValue));
 
 
 
+ 
 
 
