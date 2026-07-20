@@ -10,12 +10,19 @@
 
 
 // 2. write a 'while' loop that counts down from 5 to 1 and stores the numbers in an array named 'countdown'.
-let i = 5;
-let countdown = [];
-while (i >= 1) {
-    (countdown.push(i));
-    i--;
-}
-console.log(countdown);
+
+// let i = 5;
+// let countdown = [];
+// while (i >= 1) {
+//     (countdown.push(i));
+//     i--;
+// }
+// console.log(countdown);
+
+
+
+// 3. write a 'do while ' loop that prompts  a user to enter their favorite tea type until they enter "stop". 
+//   store each tea type in a array named 'teaCollectioon ' .
+
 
 
