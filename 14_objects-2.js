@@ -1,5 +1,6 @@
-// const tinderUser = new Object();    // object constructor syntax
-const tinderUser = {};                 // object literal syntax or singleton syntax
+// const tinderUser = {};                 // object literal syntax or singleton syntax
+
+const tinderUser = new Object();    // object constructor syntax
 
 tinderUser.id = '123abc';
 tinderUser.name = 'John';
@@ -27,12 +28,13 @@ const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 const obj3 = {5: "a", 6: "b"}
 
-// const obj3 = {obj1 , obj2}
+// const obj4 = {obj1 , obj2}
 // const obj4 = Object.assign( obj1 , obj2, obj3)    // obj1 is target here
 // const obj4 = Object.assign({}, obj1 , obj2, obj3)  // empty array is target here
 
 const obj4 = {...obj1 , ...obj2, ...obj3}  // spread operator
 // console.log(obj4);
+
 
 
 // database--->
@@ -67,11 +69,25 @@ const course = {
 
 const {courseInstructor: instructor} = course
 
-console.log(course.courseInstructor);
-console.log(instructor);
+// console.log(course.courseInstructor);
+// console.log(instructor);
 
 
+// JSON API Response--->
 
+// {
+//     "name": "palak",
+//     "age": 20,
+//     "isStudent": true,                      ---in object form
+//     "location": "India",
+//     "email": "palak@example.com"
+// }
+
+// [
+//     {},
+//     {},                                     ---in array form
+//     {}
+// ]
 
 
 
