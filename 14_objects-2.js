@@ -46,14 +46,29 @@ const users = [
 
 
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("ia"));  // false 
+// console.log(tinderUser.hasOwnProperty("ia"));  // false 
 
+
+
+// Destructuring in objects--->
+
+const course = {
+    courseName: "JavaScript",
+    price: "999",
+    courseInstructor: "Raj Goyal"
+}
+// course.courseInstructor
+
+const {courseInstructor: instructor} = course
+
+console.log(course.courseInstructor);
+console.log(instructor);
 
 
 
