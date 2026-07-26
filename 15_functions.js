@@ -46,3 +46,4 @@ function loginUserMsg(username = "sam"){                // now if there will be 
 // console.log(loginUserMsg("palak"))
 console.log(loginUserMsg())                        // undefined 
 
+loginUserMsg()
