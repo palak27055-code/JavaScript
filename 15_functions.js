@@ -37,13 +37,11 @@ function loginUserMsg(username){
 
 // another way-->
 
-function loginUserMsg(username = "sam"){                // now if there will be no input then sam will be present by deafault.                
+function loginUserMsg(username = "sam"){                // now if there will be no input then sam will be present by default.                
     return `${username} just logged in`
 }
 
 
 
 // console.log(loginUserMsg("palak"))
-console.log(loginUserMsg())                        // undefined 
-
-loginUserMsg()
+console.log(loginUserMsg())                        // sam just logged in 
