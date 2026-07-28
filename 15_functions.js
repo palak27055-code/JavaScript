@@ -1,4 +1,4 @@
-function sayMyName(){
+function sayMyName() {
     let name = ["p", "a", "l", "a", "k"];
     for (const letter of name) {
         console.log(letter);
@@ -16,19 +16,19 @@ function sayMyName(){
 
 // with return---->                                // here the output can be stored in new variable 
 
-function addTwoNums(num1, num2){       
-   let result = num1 + num2; 
-   return result;
-   console.log("this line will not execute");      // after return nothing will execute.  
+function addTwoNums(num1, num2) {
+    let result = num1 + num2;
+    return result;
+    console.log("this line will not execute");      // after return nothing will execute.  
 }
 
 const output = addTwoNums(4, 9)
 // console.log("output: ", output);
-    
 
 
-function loginUserMsg(username){
-    if(!username){                                      // !username means if username is not present or undefined or null or empty string
+
+function loginUserMsg(username) {
+    if (!username) {                                      // !username means if username is not present or undefined or null or empty string
         console.log("please enter a username.");
         return;
     }
@@ -37,11 +37,25 @@ function loginUserMsg(username){
 
 // another way-->
 
-function loginUserMsg(username = "sam"){                // now if there will be no input then sam will be present by default.                
+function loginUserMsg(username = "sam") {                // now if there will be no input then sam will be present by default.                
     return `${username} just logged in`
 }
 
-
-
 // console.log(loginUserMsg("palak"))
-console.log(loginUserMsg())                        // sam just logged in 
+// console.log(loginUserMsg())                        // sam just logged in 
+
+
+
+function calculateCartPrice(...num) {                 // ...num means rest operator which will take all the arguments and store them in an array called num
+    return num;
+}
+
+const user = {
+    username: "palak",
+    price: 30,
+}
+
+function handleObject(anyObject) {
+    console.log("user is  ${anyObject.userename} and price is ${anyObject.price}");
+}
+handleObject()
