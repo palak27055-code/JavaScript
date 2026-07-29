@@ -55,9 +55,39 @@ if(true){
     const username = "palak";
 
     if(username === "palak"){
-        const website = "youtube"
+        const website = " youtube"
         console.log(username + website);
     }
     // console.log(website);           // error 
 }
 // console.log(username);             // error 
+
+
+// ========================================
+// FUNCTION DECLARTION AND EXPRESSION
+// ========================================
+
+// -----------Funtion declartion-----------
+
+// This works even before the function is written.
+// JS moves function to the top.
+// This process is called HOISTING.
+
+console.log(addOne(5));
+
+function addOne(num){
+    return num + 1;
+}
+
+// -----------Funtion expression-----------
+
+// This will not work before the function is written.
+// 'addTwo' is created using a variable.
+// before initialization
+
+// console.log(addTwo(10));                error
+
+const addTwo = function(num){
+    return num + 2;
+}
+// console.log(addTwo(10));
