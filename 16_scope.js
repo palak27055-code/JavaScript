@@ -26,14 +26,22 @@ if(true){
 // note : global scope in console and node js environment (production code) is different
 
 
+
+// ==================================================================
+// NESTED FUNCTIONS (function inside Function)
+// ==================================================================
+
 function one(){
     const username = "John";
-
+    
+    // function two is created inside function one
     function two(){
         const website = "youtube"
+        // 'two' can access variables of its parent function.
+        // this is calleed lexical scope (Closure).
         console.log(username);
     }
-    // console.log(website);
+    // console.log(website);     // error if uncommented
     // two()
 }
-// one()
+// one()              // two will only execute if one is called
