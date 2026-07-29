@@ -45,3 +45,19 @@ function one(){
     // two()
 }
 // one()              // two will only execute if one is called
+
+
+// ===================================================
+// NESTED IF BLOCKS 
+// ===================================================
+
+if(true){
+    const username = "palak";
+
+    if(username === "palak"){
+        const website = "youtube"
+        console.log(username + website);
+    }
+    // console.log(website);           // error 
+}
+// console.log(username);             // error 
