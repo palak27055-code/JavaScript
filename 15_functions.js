@@ -50,12 +50,31 @@ function calculateCartPrice(...num) {                 // ...num means rest opera
     return num;
 }
 
+
+// functions using Object--->
+
 const user = {
     username: "palak",
-    price: 30,
+    price: 300,
 }
 
 function handleObject(anyObject) {
-    console.log("user is  ${anyObject.userename} and price is ${anyObject.price}");
+    console.log(`username is ${anyObject.username} and price is ${anyObject.price}`);
 }
-handleObject()
+// handleObject(user)
+// handleObject({
+//     username: "Shivam",
+//     price: 900,
+//     age: 20
+// })
+
+
+// functions using Array-->
+
+const myArray = [70, 89, 90, 67, 56, 87];
+
+function secondElement(getSecond){
+    return getSecond[1]
+}
+console.log(secondElement(myArray))
+console.log(secondElement([9, 7, 8, 5, 4]))
