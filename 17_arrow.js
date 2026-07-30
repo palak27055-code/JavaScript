@@ -71,7 +71,15 @@ const hey = () => {
 
 //Method 1: using return keyword
 
-const addTwo = (num1, num2) => {
-      return num1 + num2;
-}
+// const addTwo = (num1, num2) => {
+//       return num1 + num2;
+// }
+// console.log(addTwo(3,4));
+
+
+//Method 2: implicit return keyword
+
+const addTwo = (num1, num2) => num1 + num2
+      
+
 console.log(addTwo(3,4));
