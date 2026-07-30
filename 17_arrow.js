@@ -62,4 +62,16 @@ const hey = () => {
     //They use "this" from the surrounding scope.
     console.log(this);
 }
-hey()
+// hey()
+
+
+// ==================================
+// ARROW FUNCTION returning value
+// ==================================
+
+//Method 1: using return keyword
+
+const addTwo = (num1, num2) => {
+      return num1 + num2;
+}
+console.log(addTwo(3,4));
