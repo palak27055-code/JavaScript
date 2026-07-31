@@ -59,10 +59,9 @@ const one = function(){
 const hey = () => {
     let username = "shivam"
     //arrow function don't have their own "this".
-    //They use "this" from the surrounding scope.
-    console.log(this);
+    console.log(this.username);
 }
-// hey()
+hey()       // undefined
 
 
 // ==================================
@@ -79,7 +78,14 @@ const hey = () => {
 
 //Method 2: implicit return keyword
 
-const addTwo = (num1, num2) => num1 + num2
-      
+const addTwo = (num1, num2) => num1 + num2  
+                //OR
+const addTwo = (num1, num2) => (num1 + num2)
+// console.log(addTwo(3,4));
 
-console.log(addTwo(3,4));
+
+// ==================================
+//  returning an object
+// ==================================
+
+const addTwo = (num1, num2) => ({username: "palak"})
