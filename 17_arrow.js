@@ -61,7 +61,7 @@ const hey = () => {
     //arrow function don't have their own "this".
     console.log(this.username);
 }
-hey()       // undefined
+// hey()   // undefined
 
 
 // ==================================
@@ -78,9 +78,9 @@ hey()       // undefined
 
 //Method 2: implicit return keyword
 
-const addTwo = (num1, num2) => num1 + num2  
-                //OR
-const addTwo = (num1, num2) => (num1 + num2)
+// const addTwo = (num1, num2) => num1 + num2  
+//                 //OR
+// const addTwo = (num1, num2) => (num1 + num2)
 // console.log(addTwo(3,4));
 
 
@@ -88,4 +88,15 @@ const addTwo = (num1, num2) => (num1 + num2)
 //  returning an object
 // ==================================
 
-const addTwo = (num1, num2) => ({username: "palak"})
+const addTwo = () => ({username: "palak"})
+console.log(addTwo());
+
+
+// ==================================
+//  returning an array
+// ==================================
+
+myArray = [1,2,3,4,5]
+myArray.forEach(element => {
+    console.log(element);
+});
