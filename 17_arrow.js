@@ -1,0 +1,102 @@
+// ==================================
+// OBJECT AND "this" KEYWORD
+// ==================================
+
+// creating an object
+const  user = {
+    username: "palak",
+    price: 999,
+    //function or method inside a object
+    welcomeMessage: function(){
+        // "this" refers to the current object (user)
+        console.log(`${this.username}, welcome to website.`);
+
+        // prints the complete current object
+        console.log(this); 
+    }
+}
+// calling the function
+// user.welcomeMessage();
+
+//changing username
+user.username = "shivam"
+// user.welcomeMessage()
+
+
+
+//In node.js, outside any object, "this" refers to an empty object {}"
+//In browser, "this" refers to a window object"
+// console.log(this);
+
+// ==================================
+// "this" inside a normal function
+// ==================================
+
+function chai(){
+    let username = "palak"
+    //"this" does not refer to local variable
+    // this.username is undefined
+    console.log(this.username);   
+}
+// chai()
+
+
+// ==================================
+// function expression example
+// ==================================
+
+const one = function(){
+    let username = "shivam"
+    console.log(this.one);
+}
+// one()
+
+
+// ==================================
+// ARROW FUNCTION 
+// ==================================
+
+const hey = () => {
+    let username = "shivam"
+    //arrow function don't have their own "this".
+    console.log(this.username);
+}
+// hey()   // undefined
+
+
+// ==================================
+// ARROW FUNCTION returning value
+// ==================================
+
+//Method 1: using return keyword
+
+// const addTwo = (num1, num2) => {
+//       return num1 + num2;
+// }
+// console.log(addTwo(3,4));
+
+
+//Method 2: implicit return keyword
+
+// const addTwo = (num1, num2) => num1 + num2  
+//                 //OR
+// const addTwo = (num1, num2) => (num1 + num2)
+// console.log(addTwo(3,4));
+
+
+// ==================================
+//  returning an object
+// ==================================
+
+const addTwo = () => ({username: "palak"})
+console.log(addTwo());
+
+
+// ==================================
+//  returning an array
+// ==================================
+
+myArray = [1,2,3,4,5]
+myArray.forEach(element => {
+    console.log(element);
+});
