@@ -52,6 +52,12 @@ console.log(Number(isValue));
 console.log(Number(null));
 console.log(Number(undefined));
 
+// shivam loves palak
+// HEY BHAGWAN ARE YOU THERE?
+// YES HI AM HERE
+// THIS IS A TEST MESSAGE
+// IT IS TRUE OFCOURSE
+
 
 
 
